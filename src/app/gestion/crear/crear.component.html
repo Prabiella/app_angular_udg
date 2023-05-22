@@ -1,0 +1,51 @@
+<app-header></app-header>
+
+<div class="row">
+    <div class="col-md-12 text-center text-white mt-5">
+       
+            <h3>Registra una nueva película</h3>
+       
+    </div>
+</div>
+
+<div class="row mt-5">
+    
+    <div class="col-md-4 offset-md-4">
+        <form role="form" #nuevaPeli="ngForm" (ngSubmit)="onProductCreate(nuevaPeli.value)">
+            <div class="form-group text-white">
+                 
+                <label for="titulo" >
+                   Título
+                </label>
+                <input type="text" class="form-control" id="titulo" name="title" ngModel />
+            </div>
+            <div class="form-group text-white">
+                 
+                <label for="sinopsis">
+                    Sinopsis
+                </label>
+                <input type="text" class="form-control" id="sinopsis" name="synopsis" ngModel />
+            </div>
+            <div class="form-group text-white">
+                 
+                <label for="year">
+                    Año
+                </label>
+                <input type="text" class="form-control" id="year" name="year" ngModel />
+            </div>
+         
+            <div class="form-group text-white">
+                 
+                <label for="img">
+                    imagen
+                </label>
+                <input type="text"   class="form-control" id="img"  name="cover"ngModel />
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Crear
+            </button>
+        </form>
+    </div>
+</div>
+

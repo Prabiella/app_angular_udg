@@ -1,0 +1,100 @@
+<!-- <p>Aquí a el detalle de la película</p> -->
+<app-header></app-header>
+<div class="row detalleMovie">
+    <div class="col-md-12 mascara">
+       <img [src]="parametros.cover" alt="{{parametros.title}}">
+        <!-- <img src="../../../assets/img/sonrie.png" alt="Sonrie"> -->
+    </div>
+    <div class="col-md-12 datosdetalle" >
+      
+        <h4 >{{parametros.title}}</h4>
+        <p>
+          {{parametros.synopsis}}
+        </p>
+        <ul>
+            <li>
+                <h6>Año:</h6>
+                <p>{{parametros.year}}</p>
+            </li>
+            <li>
+                <button type="button" class="btn btn-primary btneditar" data-toggle="modal" data-target="#editar" (click)=" onEditMovie(parametros.id)">Editar</button>
+            </li>
+            <li>
+                <button type="button" class="btn btn-primary btnborrar" (click)="onDeleteMovie(parametros.id)">Borrar</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="modal fade" id="editar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Actualizar Película</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        
+            <div class="row">
+                <div class="col-md-12 text-center mt-2">
+                   
+                        <h3 cl>Actualiza esta película</h3>
+                   
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                
+                <div class="col-md-12">
+                    <form role="form" #EditPeli="ngForm" (ngSubmit)="onEditMovie(EditPeli.value)">
+                        <div class="form-group">
+                             
+                            <label for="titulo" >
+                               Título
+                            </label>
+                            <input type="text" class="form-control" id="titulo" name="title" ngModel />
+                        </div>
+                        <div class="form-group ">
+                             
+                            <label for="sinopsis">
+                                Sinopsis
+                            </label>
+                            <input type="text" class="form-control" id="sinopsis" name="synopsis" ngModel />
+                        </div>
+                        <div class="form-group ">
+                             
+                            <label for="year">
+                                Año
+                            </label>
+                            <input type="text" class="form-control" id="year" name="year" ngModel />
+                        </div>
+                     
+                        <div class="form-group ">
+                             
+                            <label for="img">
+                                imagen
+                            </label>
+                            <input type="text"   class="form-control" id="img"  name="cover"ngModel />
+                        </div>
+            
+                        <button type="submit" class="btn btn-primary">
+                            Actualizar
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<app-footer></app-footer>

@@ -1,1 +1,181 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    background: rgb(61,39,111);
+    background: linear-gradient(180deg, rgba(61,39,111,1) 0%, rgba(40,27,57,1) 35%, rgba(61,39,111,1) 100%);
+}
+
+.marg{
+    padding: 0px;
+}
+
+.peliculas{
+    padding: 0px 5%;
+    margin-bottom: 5%;
+}
+
+.nav {
+    background-color:#281B39;
+    
+}
+
+.nav img{
+    padding: 5px;
+}
+
+.nav-link{
+    color: #fff;
+}
+
+.nav-link:hover{
+    color: #F5921E;
+}
+
+.nav-link:active{
+    color: #fff;
+}
+
+.nav-link:visited{
+    color: #F5921E;
+    }
+
+
+.peliculas h3{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight:normal;
+}
+
+.peliculas p{
+    color: #B4B4B4;
+    font-size: 1.0rem;
+    font-weight:bolder;
+}
+
+.peliculas a{
+    color: #F5921E;
+}
+
+.detalleMovie {
+   height: 50vh;
+    
+}
+.detalleMovie img{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: -98;
+}
+
+.mascara{
+    height: 50vh;
+    background: rgb(40,27,57);
+    background: linear-gradient(0deg, rgba(40,27,57,1) 0%, rgba(40,27,57,0) 98%);
+}
+
+.mascara img{
+    width: 300px;
+}
+
+
+
+.datosdetalle{
+   
+    top: -40%;
+    padding: 0 5%;
+    width: 100%;
+}
+
+.datosdetalle h4{ 
+   color: #F5921E;
+   font-weight: bold;
+}
+
+.datosdetalle p{
+    color: #fff;
+}
+
+
+.datosdetalle ul  {
+    list-style: none;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.datosdetalle ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.datosdetalle ul li h6{
+    color: #F5921E;
+    font-weight: bold;
+}
+
+
+
+.btndetalle {
+    background-color: #F5921E;
+    border: none;
+  
+}
+
+.btndetalle:hover{
+    background-color: #fff;
+    border: none;
+  
+}
+
+
+
+.btneditar {
+    background-color: #F5921E;
+    border: none;
+  
+}
+
+.btneditar:hover{
+    background-color: #281B39;
+    color: #fff;
+  
+}
+
+
+
+.btnborrar {
+    background-color: #f51e1e;
+    border: none;
+  
+}
+
+.btnborrar:hover{
+    background-color: #281B39;
+    color: #fff;
+  
+}
+
+
+
+.btndetalle p{
+
+    color: #281B39;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.footer{
+    background-color: #281B39;
+    border-top: solid 1px #554676;
+}
+
+.footer .logo{
+   padding-top: 30px;
+}
+
+
+.footer p{
+   color: #fff;
+   padding-top: 15px;
+   padding-left: 50px;
+ }
+ 
+
