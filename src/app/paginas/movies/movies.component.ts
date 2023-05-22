@@ -38,7 +38,7 @@ export class MoviesComponent implements OnInit {
  
  
   onDeleteMovie(id:string){
-    this.http.delete('http://127.0.0.1:8000/api/pelis/'+id)
+    this.http.delete('https://fast-crag-45759.herokuapp.com/api/pelis/'+id)
     .subscribe(() =>{
       this.router.navigate(['/']);
     });
@@ -65,7 +65,7 @@ export class MoviesComponent implements OnInit {
     });
 
     
-    this.http.put('http://127.0.0.1:8000/api/pelis/' + this.parametros.id, formData)
+    this.http.put('https://fast-crag-45759.herokuapp.com/api/pelis/' + this.parametros.id, formData)
     .subscribe(()=>{
       this.router.navigate(['/']);
     });

@@ -14,7 +14,7 @@ export class CrearComponent {
 
   onProductCreate(pelis: { title:string, synopsis:string, year:string, cover:string}){
     console.log(pelis);
-    this.http.post('http://127.0.0.1:8000/api/pelis',pelis)
+    this.http.post('https://fast-crag-45759.herokuapp.com/api/pelis',pelis)
     .subscribe((res) => {
       console.log(res);
     });

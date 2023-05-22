@@ -9,7 +9,7 @@ export class ServiciosApiService {
  
   constructor(private http:HttpClient) { }
   getMovie(){
-    return this.http.get('http://127.0.0.1:8000/api/pelis');
+    return this.http.get('https://fast-crag-45759.herokuapp.com/api/pelis');
   }
   
 }
